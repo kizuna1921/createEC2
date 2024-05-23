@@ -33,26 +33,10 @@ variable "eks_private_subnets" {
     }
   }
 }
-########################################
-### EKS
-########################################
-variable "eks_cluster_name" {
-  description = "eks_clusterの名前"
-  type        = string
-  default     = "eks_cluster_test"
+variable "key_name" {
+  default = "terraform-test-keypair"
 }
-variable "ekscluster_role_name" {
-  description = "eks_clusterのロール名"
-  type        = string
-  default     = "eks_cluster_role_test"
-}
-variable "ekspodexecution_role_name" {
-  description = "ekspodexecutionのロール名"
-  type        = string
-  default     = "ekspodexecution_role_test"
-}
-variable "eks_fargate_kubesystem_profile_name" {
-  description = "eks_fargate_kubesystem_profileの名前"
-  type        = string
-  default     = "fargate_kubesystem_profile_test"
+
+variable "az_a" {
+  default     = "ap-northeast-1a"
 }
