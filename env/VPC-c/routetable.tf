@@ -3,7 +3,7 @@
 # ---------------------------
 # Route table作成
 resource "aws_route_table" "test_public_rt" {
-  vpc_id            = aws_vpc.test_vpc.id
+  vpc_id            = aws_vpc.test_vpc_c.id
   route {
     cidr_block      = "0.0.0.0/0"
     gateway_id      = aws_internet_gateway.test_igw.id
